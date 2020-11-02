@@ -6,119 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Destination.css">
     <title>En voyage organisé</title>
 </head>
 
 <body>
-
+    
     <div class="header">
-    <h1>En voyage organisé</h1>
-    <p>Personne peut nous rivaliser</p>
-    </div>
-
-    <div class="nav-barre">
-        <a href="Acceuil.html">Accueil</a>
-        <a href="Destination.html">Destination</a>
-        <a href="MonProfil.html">Mon profil</a>
-        <a href="MonPanier.html">Mon panier</a>
-        <a href="pagecontact.html">A propos& Contact</a>
-    </div>
-
-    <link rel="stylesheet" href="../css/Destination.css">
-
-    <div class = "tableau">
-
-    <div class="tableau-item"> 
-        <a href="#"><img src="../image/Marseille.jpg" alt="Marseille photo"  width="420px"></a>
-        <p class="nom">Marseille</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Paris.jpg" alt="Paris photo"  width="420px"></a>
-        <p class="nom">Paris</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Barcelone.jpg" alt="Barcelone photo" width="420"></a>
-        <p class="nom">Barcelone</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Madrid.jpg" alt="Madrid photo" width="420"></a>
-        <p class="nom">Madrid</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Los-Angeles.jpg" alt="Los Angeles photo" width="420"></a>
-        <p class="nom">Los Angeles</p>
-        <p class="prix">500$</p>
+        <div class="logo">
+            <img src="../image/logo.jpg" alt="logo" width="400">
+        </div>
+        <p>Personne peut nous rivaliser</p>
     </div>
     
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Cancun.jpg" alt="Cancun photo" width="420"></a>
-        <p class="nom">Cancun</p>
-        <p class="prix">500$</p>
+    <div class="nav-barre">
+        <a href="Acceuil.html">Accueil</a>
+        <a href="Destinationessai.html">Destination</a>
+        <a href="MonProfil.html">Mon profil</a>
+        <a href="MonPanier.html">Mon panier</a>
+        <a href="pagecontact.html">A propos&Contact</a>
     </div>
 
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Lima.jpg" alt=" Lima photo" width="420"></a>
-        <p class="nom">Lima</p>
-        <p class="prix">500$</p>
+    
+
+    <div class = "tableau">
+        <template id="listeDestination">
+            <div class="tableau-item"> <a href="#"><img src="../image/{{ville}}.jpg" alt="{{ville}}" width="420"></a>
+                <span>{{prix}}</span>
+                <span>{{ville}}</span>
+            </div>
+        </template>
     </div>
 
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Rio-de-Janeiro.jpg" alt="Rio de Janeiro photo" width="420"></a>
-        <p class="nom">Rio de Janeiro</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Londres.jpg" alt="Londres photo" width="420"></a>
-        <p class="nom">Londres</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Shanghai.jpg" alt=" Shanghai photo" width="420"></a>
-        <p class="nom">Shanghai</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Phuket.jpg" alt="Phuket photo" width="420"></a>
-        <p class="nom">Phuket</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Johannesburg.jpg" alt="Johannesburg photo" width="420"></a>
-        <p class="nom">Johannesburg</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Rome.jpg" alt="Rome photo" width="420"></a>
-        <p class="nom">Rome</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Kuta.jpg" alt="Kuta photo" width="420"></a>
-        <p class="nom">Kuta</p>
-        <p class="prix">500$</p>
-    </div>
-
-    <div class="tableau-item">
-        <a href="#"><img src="../image/Bora-bora.jpg" alt="Bora Bora photo" width="420"></a>
-        <p class="nom">Bora Bora</p>
-        <p class="prix">500$</p>
-    </div>
-
-    </div>
+    <script src="../js/Destination.js" defer async></script>
+    
 </body>
 
 </html>
