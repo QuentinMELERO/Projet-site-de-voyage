@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>En voyage organisé</title>
+    <script src="../js/Reservation.js"></script>
 </head>
 
 <body>
@@ -30,8 +31,9 @@
         
     <form action="#" method="GET">
         <div class="formulaire">
-        <legend>Récapitulatif des informations pour </legend>
-
+            <template id="Destination">
+                <legend>Récapitulatif des informations pour {{ville}}</legend>
+            </template>        
             <div class ="form-group">
                 Nom : <br>
                 <input type="text" name="Nom"><br>
