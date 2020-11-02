@@ -26,35 +26,59 @@
         <a href="pagecontact.html">A propos& Contact</a>
     </div>
 
-    <link rel="stylesheet" href="../css/Recapitulatif-des-infos.css">
-    
-   <form action="#" method="GET">
-       <fieldset>
-           <legend>Récapitulatif des informations</legend>
-       
-            Nom : <br>
-            <input type="text" name="Nom"><br>
-            Prénom : <br>
-            <input type="text" name="Prénom"><br>
-            Adresse mail: <br>
-            <input type="email" name="Mail"><br>
-            Téléphone : <br>
-            <input type="tel" name="N=Telephone"><br>
-            Date de départ : <br>
-            <input type="date" name="Date de départ"><br>
-            Date de retour : <br>
-            <input type="date" name="Date de retour"><br>
-            Nombre d'adultes: <br>
-            <input type="number" name="Nombre d'adultes"><br>
-            Nombre d'enfants (-12ans) : <br>
-            <input type="number" name="Nombre d'enfants"><br>
-            Petit déjeuner : <br>
-            <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
-            <input type="radio" name="Petit déjeuner" value="Non" checked> Non<br>
-            Renseignements utiles: <br>
-            <textarea></textarea><br>
-            <input type="submit" value="Valider">
-        </fieldset>
+    <link rel="stylesheet" href="../css/Reservation.css">
+        
+    <form action="#" method="GET">
+        <div class="formulaire">
+        <legend>Récapitulatif des informations pour </legend>
+
+            <div class ="form-group">
+                Nom : <br>
+                <input type="text" name="Nom"><br>
+                Prénom : <br>
+                <input type="text" name="Prénom"><br>
+            </div>
+            
+            <div class ="form-group">
+                Adresse mail: <br>
+                <input type="email" name="Mail"><br>
+                Téléphone : <br>
+                <input type="tel" name="N=Telephone"><br>
+            </div>
+
+            <div class ="form-group">
+                Date de départ : <br>
+                <input type="date" name="Date de départ"><br>
+                Date de retour : <br>
+                <input type="date" name="Date de retour"><br>
+            </div>
+
+            <div class ="form-group">
+                Nombre d'adultes: <br>
+                <input type="number" name="Nombre d'adultes"><br>
+                Nombre d'enfants (-12ans) : <br>
+                <input type="number" name="Nombre d'enfants"><br>
+            </div>
+
+            <div class ="form-group">
+                <label for="Ptitdéj">Petit déjeunner</label>
+                <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
+                <input type="radio" name="Petit déjeuner" value="Non" checked> Non
+                
+                <label for="Animaux">Animaux</label>
+                <input type="radio" name="Animaux" value="Oui" checked> Oui
+                <input type="radio" name="Animaux" value="Non" checked> Non
+            </div>
+
+            <div class ="form-group">
+                Renseignements utiles: <br>
+                <textarea></textarea><br>
+            </div>
+
+            <div class ="button-submit">
+                <input type="submit" value="Valider">
+            </div>
+        
     </form>
 </body>
 
