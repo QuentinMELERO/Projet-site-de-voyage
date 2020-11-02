@@ -1,0 +1,41 @@
+/*Formulaire de reservation récapitulatif*/
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 15px;
+}
+
+.formulaire{
+    background-color: #afa7a7;
+    padding: 40px ;
+    font-family:  'Acme', sans-serif;
+    float: left;
+
+}
+
+.form-group label{
+    margin: 5px;
+    padding: 10px;
+}
+
+.form-group input,select,option{
+    border: none;
+    padding: 5px;
+}
+
+.button-submit{
+    text-align: center;
+}
+
+.button-submit input{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+    font-family:  'Acme', sans-serif;
+
+}
