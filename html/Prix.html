@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/Prix.js" defer async></script>
+</head>
+
+<body>
+
+    <div>Test Formulaire</div>
+    <table>
+    <form name ="bdc" action="#">
+        <tr>
+            <td width="200"></td>
+            <td>Quantite</td>
+        </tr>
+
+        <tr>
+            <td>Adultes</td>
+            <td><input name="Quantite1" id="Quantite1" type="text"/></td>
+            <td><input name="Prix1" type="text" value="1000"/></td>
+            <td><input name="Total1" type="text"/></td>
+
+        </tr>
+
+        <tr>
+            <td>Enfants</td>
+            <td><input name="Quantite2" id="Quantite2" type="text"/></td>
+            <td><input name="Prix2" type="text" value="400"/></td>
+            <td><input name="Total2" type="text"/></td>
+        </tr>
+
+        <tr>
+            <td><input type ="button" value="Calculer" onclick="Calculer();"></td>
+            <td><input type ="submit" value="Envoyer" onclick="Calculer();"></td>
+            <td>Total</td>
+            <td><input name="Total" type="text"/></td>
+
+        </tr>
+
+    </form>
+    </table>
+
+   
+    
+
+</body>
+
+</html>
