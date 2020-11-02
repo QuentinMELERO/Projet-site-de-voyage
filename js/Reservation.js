@@ -34,3 +34,13 @@ const tabDest
 const found = tabDest.find(element => element == sejour_id);
 
 console.log(found);
+
+
+
+
+let template = document.querySelector("#Destination");
+
+newContent = clone.firstElementChild.innerHTML
+.replace(/{{ville}}/g, v._ville)
+
+clone.firstElementChild.innerHTML = newContent 
