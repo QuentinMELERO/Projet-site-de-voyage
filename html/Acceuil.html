@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Accueil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <title>En voyage organisé</title>
+    <style>
+        .mySlides {display:none;}
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>En voyage organisé</h1>
+        <p>Personne peut nous rivaliser</p>
+        <div class="logo">
+            <img src="../image/logo.jpg" alt="logo" width="200">
+        </div>
+    </div>
+
+    <div class="nav-barre">
+        <a href="Acceuil.html">Accueil</a>
+        <a href="Destination.html">Destination</a>
+        <a href="MonProfil.htm">Mon profil</a>
+        <a href="MonPanier.html">Mon panier</a>
+        <a href="pagecontact.html">A propos& Contact</a>
+    </div>
+
+    <form method="GET">
+        <div class="barre-recherche">
+
+            <div class ="form-group">
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination">
+                    <option selected="selected">Aucune</option>
+                    <option> Marseille </option>
+                    <option> Paris </option>
+                    <option> Barcelone </option>
+                    <option> Madrid </option>
+                    <option> Los Angeles</option>
+                    <option> Cancun </option>
+                    <option> Lima  </option>
+                    <option> Rio de Janeiro</option>
+                    <option> Londres </option>
+                    <option> Shanghai </option>
+                    <option> Phuket </option>
+                    <option> Johannesburg</option>
+                    <option> Rome </option>
+                    <option> Kuta </option>
+                    <option> Bora Bora</option>
+                </select>
+            </div>
+
+            <div class ="form-group">
+                <label for="départ">Date de départ</label>
+                <input type="date" name="départ" id="départ">
+
+                <label for="retour">Date de retour</label>
+                <input type="date" name="retour" id="retour">
+            </div>
+
+            <div class ="form-group">
+                <label for="adultes">Nombres d'adultes</label>
+                <select name="adultes" id="adultes">
+                    <option selected="selected">0 Adulte</option>
+                    <option> 1 Adulte</option>
+                    <option> 2 Adultes</option>
+                    <option> 3 Adultes</option>
+                    <option> 4 Adultes</option>
+                    <option> 5 Adultes</option>
+                    <option> 6 Adultes</option>
+                </select>
+
+                <label for="enfants">Nombres d'enfants</label>
+                <select name="enfants" id="enfants">
+                    <option selected="selected">0 Enfant</option>
+                    <option> 1 Enfant</option>
+                    <option> 2 Enfants</option>
+                    <option> 3 Enfants</option>
+                    <option> 4 Enfants</option>
+                    <option> 5 Enfants</option>
+                    <option> 6 Enfants</option>
+            </select>
+            </div>
+
+            <div class ="form-group">
+                <label for="Ptitdéj">Petit déjeunner</label>
+                <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
+                <input type="radio" name="Petit déjeuner" value="Non" checked> Non
+            </div>
+
+            <div class ="form-group">
+                <label for="Animaux">Animaux</label>
+                <input type="radio" name="Animaux" value="Oui" checked> Oui
+                <input type="radio" name="Animaux" value="Non" checked> Non
+            </div>
+
+            <div class ="button-submit">
+                <input type="submit" value="Lancer la recherche" name="recherche" id="recherche">
+            </div>
+        </div>
+    </form>
+
+    <p1>Nos offres les plus consultées</p1>
+
+    <div class="Monslide" style="max-width:450px">
+        <img class="mySlides" src="../image/Marseille.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Paris.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Bora-bora.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Kuta.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Shanghai.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Barcelone.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Rio-de-Janeiro.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Londres.jpg" style="width:100%">
+        <img class="mySlides" src="../image/Phuket.jpg" style="width:100%">
+     </div>
+        
+    <script src="../js/Slide.js"></script>
+
+
+</body>
+
+</html>

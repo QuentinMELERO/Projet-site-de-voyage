@@ -1,0 +1,116 @@
+/*Style de la tête de page*/
+
+.header {
+    background-color: #afa7a7;
+    padding: 30px;
+    text-align: center;
+    font-size:1.25rem;
+    font-family:  'Acme', sans-serif;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+/*Style de la barre de naviguation*/
+
+.nav-barre{
+    display:flex;
+    overflow:hidden;
+    background-color:whitesmoke;
+}
+
+/*Style des items de la barre de naviguation*/
+
+.nav-barre a {
+    color:black ;
+    flex-grow : 1;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    text-decoration : none;
+    font-family:  'Acme', sans-serif;
+    text-transform: uppercase;
+
+}
+
+/* Change la couleur quand la souris passe dessus*/
+
+.nav-barre a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+/* LOGO */
+.logo{
+    
+}
+
+
+
+
+
+/*Formulaire de recherche*/
+
+.form-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.barre-recherche{
+    background-color: #afa7a7;
+    padding: 40px ;
+    font-family:  'Acme', sans-serif;
+    float: left;
+
+}
+
+.form-group label{
+    margin: 5px;
+    padding: 10px;
+}
+
+.form-group input,select,option{
+    border: none;
+    padding: 5px;
+}
+
+.button-submit{
+    text-align: center;
+}
+
+.button-submit input{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+    font-family:  'Acme', sans-serif;
+
+}
+
+/*Slide auto*/
+
+.Monslide{
+    float: right;
+    margin: 20px;
+}
+
+p1 {
+    font-family:  'Acme', sans-serif;
+    float: right;
+    font-size: 2rem;
+    margin: 20px;
+
+
+}
+
+
+
+
+
+
+    

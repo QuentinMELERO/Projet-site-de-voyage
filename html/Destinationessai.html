@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Accueil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>En voyage organisé</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>En voyage organisé</h1>
+        <p>Personne peut nous rivaliser</p>
+    </div>
+
+    <div class="nav-barre">
+        <a href="Acceuil.html">Accueil</a>
+        <a href="Destinationessai.html">Destination</a>
+        <a href="MonProfil.html">Mon profil</a>
+        <a href="MonPanier.html">Mon panier</a>
+        <a href="pagecontact.html">A propos& Contact</a>
+    </div>
+
+    <link rel="stylesheet" href="../css/Destination.css">
+
+    <div class = "tableau">
+        <template id=listeDestination>
+            <div class="tableau-item"> <a href="#"><img src="../image/{{ville}}.jpg" alt="{{ville}}" width="420"></a>
+                <span>{{prix}}</span>
+                <span>{{ville}}</span>
+            </div>
+        </template>
+    </div>
+
+    <script src="../js/Destinationessai.js"></script>
+    
+</body>
+
+</html>
