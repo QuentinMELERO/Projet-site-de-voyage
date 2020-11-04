@@ -89,7 +89,7 @@
     font-size: 30px;
     margin: 15px;
     font-family:  'Acme', sans-serif;
-
+    border-radius: 40px;
 }
 
 /*Slide auto*/
@@ -97,6 +97,7 @@
 .Monslide{
     float: right;
     margin: 20px;
+    margin-right: 120px;
 }
 
 p1 {
@@ -104,9 +105,17 @@ p1 {
     float: right;
     font-size: 2rem;
     margin: 20px;
-
-
+    margin-right: 160px;
 }
+
+/*Footer*/
+
+.footer{
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color:red;
+  }
 
 
 
