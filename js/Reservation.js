@@ -29,15 +29,7 @@ tabDest = [
 
 let sejour_id = new URLSearchParams(window.location.search).get("id");
 document.getElementById("titre").textContent="Votre réservation pour " + sejour_id;
-
-
-
-const found = tabDest.find(element => element == sejour_id);
-
-console.log(found);
-
-		
-
+document.getElementById("photo").setAttribute("src","../image/" + sejour_id + ".jpg")
 
 function Calculer(){
     A=document.getElementById("Nombre d'adultes").value * 500;
