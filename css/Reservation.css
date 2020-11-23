@@ -40,3 +40,19 @@
     border-radius: 40px;
 
 }
+
+.PhotoRes{
+    float: right;
+    margin: 20px;
+    margin-right: 120px;
+}
+
+p1 {
+    font-family:  'Acme', sans-serif;
+    float: right;
+    font-size: 2rem;
+    margin: 20px;
+    margin-right: 160px;
+}
+
+
