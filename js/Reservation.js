@@ -27,7 +27,8 @@ tabDest = [
 
 
 
-let sejour_id = new URLSearchParams(window.location.search).get("id")
+let sejour_id = new URLSearchParams(window.location.search).get("id");
+document.getElementById("titre").textContent="Votre réservation pour " + sejour_id;
 
 
 
@@ -35,20 +36,11 @@ const found = tabDest.find(element => element == sejour_id);
 
 console.log(found);
 
-
-
-
-let template = document.querySelector("#Destination");
-
-newContent = clone.firstElementChild.innerHTML
-.replace(/{{ville}}/g, v._ville)
-
-clone.firstElementChild.innerHTML = newContent 
+		
 
 
 function Calculer(){
     A=document.getElementById("Nombre d'adultes").value * 500;
     B=document.getElementById("Nombre d'enfants").value * 500;
     document.formulaireresa.Total.value=parseFloat(A)+parseFloat(B);
-
 }

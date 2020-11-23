@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>En voyage organisé</title>
-    <script src="../js/Reservation.js"></script>
+    
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
     
         
-    <form name="formulaireresa" action="#" method="GET">
+    <form name="formulaireresa" action="#" method="GET" onchange="Calculer()">
         <div class="formulaire">
             <template id="Destination">
                 <legend>Récapitulatif des informations pour {{ville}}</legend>
@@ -65,9 +65,8 @@
             </div>    
 
             <div class ="form-group">    
-                    <td><input type ="button" value="Calculer" onclick="Calculer();"></td>
-                    <td>Prix total</td>
-                    <td><input name="Total" type="text"/></td>
+                Prix total
+                <input name="Total" type="text"/>
             </div>
 
             <div class ="form-group">
@@ -91,9 +90,11 @@
         </div>
     </form>
 
-    <p1>Marseille</p1>
-    <div class="PhotoRes">
-        <img src="../image/Marseille.jpg" width="450px">
+    <div class="resavil">
+            <p class="p1" id="titre"></p>
+            <div class="PhotoRes">
+                <img src="../image/{{ville}}.jpg" width="450px">
+            </div>
     </div>
 
     
