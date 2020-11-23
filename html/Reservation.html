@@ -29,7 +29,7 @@
 
     <link rel="stylesheet" href="../css/Reservation.css">
         
-    <form action="#" method="GET">
+    <form name="formulaireresa" action="#" method="GET">
         <div class="formulaire">
             <template id="Destination">
                 <legend>Récapitulatif des informations pour {{ville}}</legend>
@@ -57,9 +57,15 @@
 
             <div class ="form-group">
                 Nombre d'adultes: <br>
-                <input type="number" name="Nombre d'adultes"><br>
+                <input type="number" name="Nombre d'adultes" id="Nombre d'adultes"><br>
                 Nombre d'enfants (-12ans) : <br>
-                <input type="number" name="Nombre d'enfants"><br>
+                <input type="number" name="Nombre d'enfants" id="Nombre d'enfants"><br>
+            </div>    
+
+            <div class ="form-group">    
+                    <td><input type ="button" value="Calculer" onclick="Calculer();"></td>
+                    <td>Prix total</td>
+                    <td><input name="Total" type="text"/></td>
             </div>
 
             <div class ="form-group">
@@ -86,6 +92,9 @@
         <img class="PhotoRes" src="../image/{{ville}}.jpg" style="width:100%">
         </template>
     </form>
+
+    <script src="../js/Reservation.js"></script>
+
 </body>
 
 </html>
