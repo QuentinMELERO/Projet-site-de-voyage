@@ -29,14 +29,7 @@ tabDest = [
 
 let sejour_id = new URLSearchParams(window.location.search).get("id");
 document.getElementById("titre").textContent="Votre réservation pour " + sejour_id;
-
-
-
-const found = tabDest.find(element => element == sejour_id);
-
-console.log(found);
-
-		
+document.getElementById("PhotoRes").textContent="Votre réservation pour " + sejour_id;
 
 
 function Calculer(){
