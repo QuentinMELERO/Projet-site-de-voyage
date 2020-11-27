@@ -24,6 +24,7 @@
 .form-group input,select,option{
     border: none;
     padding: 5px;
+    border-radius: 40px;
 }
 
 .button-submit{
@@ -47,7 +48,7 @@
     margin-right: 120px;
 }
 
-.p{
+.p1{
     font-family:  'Acme', sans-serif;
     float: right;
     font-size: 2rem;
@@ -55,4 +56,7 @@
     margin-right: 160px;
 }
 
-
+.p2{
+    font-family:  'Acme', sans-serif;
+    font-size: 2rem;
+}
