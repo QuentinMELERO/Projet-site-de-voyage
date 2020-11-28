@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Destination.css">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
     <title>En voyage organisé</title>
+    <style>
+        .mySlides {display:none;}
+    </style>
 </head>
 
 <body>
-    
+
     <div class="header">
         <div class="logo">
             <img src="../image/logo.jpg" alt="logo" width="400">
@@ -24,28 +27,18 @@
         <a href="Destination.html">Destination</a>
         <a href="MonProfil.html">Mon profil</a>
         <a href="MonPanier.html">Mon panier</a>
-        <a href="Pagecontact.html">A propos&Contact</a>
-    </div>
-    
-    <div class = "tableau">
-        <template id="listeDestination">
-            <div class="tableau-item"> <a href="Reservation.html?id={{ville}}"><img src="../image/{{ville}}.jpg" alt="{{ville}}" width="420"></a>
-                <span>{{prix}}</span>
-                <span>{{ville}}</span>
-            </div>
-        </template>
+        <a href="Pagecontact.html">A propos& Contact</a>
     </div>
 
-    <script src="../js/Destination.js" defer async></script>
+    <link rel="stylesheet" href="../css/PageContact.css">
 
-    <div style="height:5000px">
-        <button onclick="retourHaut()" id="haut" title="Retour haut de page">Haut</button>
+
+    <div class="coord">
+        <p>Contactez Quentin Melero pour plus de renseignement : </p>
+        <a href="tel:0123456789">Appelez moi !</a><br>
+        <a href="mailto:quentin.melero@cpe.frsubject=Renseignement">Envoyez moi un mail !</a>
     </div>
 
-    <footer>
-        <p class="footer">Corsetti Melero CORPORATION</p>
-    </footer>
- 
+
 </body>
-
 </html>

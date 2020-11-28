@@ -34,5 +34,24 @@ document.getElementById("photo").setAttribute("src","../image/" + sejour_id + ".
 function Calculer(){
     A=document.getElementById("Nombre d'adultes").value * 500;
     B=document.getElementById("Nombre d'enfants").value * 500;
-    document.formulaireresa.Total.value=parseFloat(A)+parseFloat(B);
+    document.formulaireresa.Total.value=parseFloat(A)+parseFloat(B)
 }
+
+// Fonction pour afficher le lien de retour vers le haut de page
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
+	{
+		document.getElementById("haut").style.display = "block";
+	} 
+	else 
+	{
+		document.getElementById("haut").style.display = "none";
+	}
+}
+
+function retourHaut() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+} 

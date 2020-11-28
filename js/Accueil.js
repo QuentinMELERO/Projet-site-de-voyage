@@ -31,5 +31,24 @@ function myFunction() {
   }
 }
 
+// Fonction pour afficher le lien de retour vers le haut de page
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
+	{
+		document.getElementById("haut").style.display = "block";
+	} 
+	else 
+	{
+		document.getElementById("haut").style.display = "none";
+	}
+}
+
+function retourHaut() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+} 
+
 
 

@@ -1,15 +1,21 @@
-.informations{
+/*Nos coordonnées*/
+
+.coord{
     font-family:  'Acme', sans-serif;
     font-size: 2rem;
     margin: 15px;
     padding: 50px;
 }
 
-
-
-
+.info{
+  font-family:  'Acme', sans-serif;
+    font-size: 3rem;
+    margin: 15px;
+    padding: 50px;
+}
 
 /* Style all font awesome icons */
+
 .fa {
     padding: 10px;
     font-size: 15px;
@@ -19,23 +25,28 @@
   }
   
   /* Add a hover effect if you want */
+
   .fa:hover {
     opacity: 0.7;
   }
   
   /* Set a specific color for each brand */
   
-  /* Facebook 
+  /*Facebook*/
+
   .fa-facebook {
     background: #3B5998;
     color: white;
   } */
   
-  /* Twitter 
+  /* Twitter*/
+
   .fa-twitter {
     background: #55ACEE;
     color: white;
   } */
+
+  /*Instagram*/
 
   .fa-instagram {
     background: #125688;
@@ -44,6 +55,7 @@
 
 
 /* Carte avec nos noms */
+
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -82,7 +94,8 @@
 
   .block {
     float:left;
-    width:620px;
+    width:600px;
     margin: 50px;
     padding:0;
     }
+

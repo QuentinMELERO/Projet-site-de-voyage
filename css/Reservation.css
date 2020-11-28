@@ -28,7 +28,7 @@
 }
 
 .button-submit{
-    text-align: center;
+    text-align: center;   
 }
 
 .button-submit input{
@@ -39,8 +39,15 @@
     margin: 15px;
     font-family:  'Acme', sans-serif;
     border-radius: 40px;
-
 }
+
+.button-submit input:hover {
+    background-color: #ddd;
+    color: black;
+    transform:scale(1.3);
+    transition:0.1 all
+}
+
 
 .PhotoRes{
     float: right;
@@ -60,3 +67,25 @@
     font-family:  'Acme', sans-serif;
     font-size: 2rem;
 }
+
+/*Boutton retour haut de page*/
+
+#haut {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #afa7a7;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    }
+
+#haut:hover {
+    background-color: #ddd;
+    }
