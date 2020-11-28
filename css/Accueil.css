@@ -40,13 +40,18 @@
 .nav-barre a:hover {
     background-color: #ddd;
     color: black;
-  }
-
-/* LOGO */
-.logo{
-    
 }
 
+/* La barre de navigation reste en haut*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
 
 
 
