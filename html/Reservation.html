@@ -29,60 +29,52 @@
 
     <link rel="stylesheet" href="../css/Reservation.css">
 
-    <form name="formulaireresa" action="#" method="GET" onchange="Calculer()">
+    <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()">
         <div class="formulaire">
-            <p class="p2">Vos informations :</p>      
-            <div class ="form-group">
-                Nom : <br>
-                <input type="text" name="Nom"><br>
-                Prénom : <br>
-                <input type="text" name="Prénom"><br>
-            </div>
+            <p class="p2">Vos informations : </p><br>     
             
-            <div class ="form-group">
-                Adresse mail: <br>
+                <label for="Nom">Nom : </label><br>
+                <input type="text" name="Nom"><br>
+
+                <label for="Prenom">Prénom : </label><br>
+                <input type="text" name="Prenom"><br>
+
+                <label for="Mail">Adresse mail : </label><br>
                 <input type="email" name="Mail"><br>
-                Téléphone : <br>
-                <input type="tel" name="N=Telephone"><br>
-            </div>
 
-            <div class ="form-group">
-                Date de départ : <br>
-                <input type="date" name="Date de départ"><br>
-                Date de retour : <br>
-                <input type="date" name="Date de retour"><br>
-            </div>
+                <label for="Numtel">Téléphone : </label><br>
+                <input type="tel" name="Numtel"><br>
 
-            <div class ="form-group">
-                Nombre d'adultes: <br>
-                <input type="number" name="Nombre d'adultes" id="Nombre d'adultes"><br>
-                Nombre d'enfants (-12ans) : <br>
-                <input type="number" name="Nombre d'enfants" id="Nombre d'enfants"><br>
-            </div>    
+                <label for="Datedep">Date de départ : </label><br>
+                <input type="date" name="Datedep"><br>
 
-            <div class ="form-group">    
-                Prix total
-                <input name="Total" type="text"/>
-            </div>
+                <label for="Dateret">Date de retour : </label><br>
+                <input type="date" name="Dateret"><br>
 
-            <div class ="form-group">
-                <label for="Ptitdéj">Petit déjeunner</label>
+                <label for="Nbad">Nombre d'adultes : </label><br>
+                <input type="number" name="Nbad" id="Nombre d'adultes"><br>
+
+                <label for="Nbenf">Nombre d'enfants (-12ans) : </label><br>
+                <input type="number" name="Nbenf" id="Nombre d'enfants"><br>
+
+                <label for="Ptot">Prix total : </label><br>
+                <input type="text" name="Ptot"><br>
+        
+                <label for="Ptitdéj">Petit déjeunner : </label><br>
                 <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
-                <input type="radio" name="Petit déjeuner" value="Non" checked> Non
+                <input type="radio" name="Petit déjeuner" value="Non" checked> Non<br>
                 
-                <label for="Animaux">Animaux</label>
+                <label for="Animaux">Animaux : </label><br>
                 <input type="radio" name="Animaux" value="Oui" checked> Oui
-                <input type="radio" name="Animaux" value="Non" checked> Non
-            </div>
+                <input type="radio" name="Animaux" value="Non" checked> Non<br>
 
-            <div class ="form-group">
-                Renseignements utiles: <br>
+                <label>Renseignements utiles </label><br>
                 <textarea></textarea><br>
-            </div>
-
+            
             <div class ="button-submit">
                 <input type="submit" value="Valider">
             </div>
+
         </div>
     </form>
 
@@ -96,10 +88,6 @@
     <div style="height:5000px">
         <button onclick="retourHaut()" id="haut" title="Retour haut de page">Haut</button>
     </div>
-
-    <footer>
-        <p class="footer">Corsetti Melero CORPORATION</p>
-    </footer>
 
 </body>
 

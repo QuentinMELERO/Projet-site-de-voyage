@@ -4,8 +4,7 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 10px;
-    padding: 15px;
+    margin: 50px;
 }
 
 .formulaire{
@@ -13,15 +12,15 @@
     padding: 40px ;
     font-family:  'Acme', sans-serif;
     float: left;
-
+    padding: 50px;
 }
 
-.form-group label{
+.formulaire label{
     margin: 5px;
     padding: 10px;
 }
 
-.form-group input,select,option{
+.formulaire input,select,option{
     border: none;
     padding: 5px;
     border-radius: 40px;

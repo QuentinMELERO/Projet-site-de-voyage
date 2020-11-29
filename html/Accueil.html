@@ -32,11 +32,10 @@
 
     <form method="GET">
         <div class="barre-recherche">
-
-            <div class ="form-group">
-                <label for="destination">Destination</label>
-                <select name="destination" id="destination">
-                    <option selected="selected">Aucune</option>
+            <p class="rech">Trouvez le voyage de vos rêves</p><br>
+            <label for="destination">Destination</label><br>
+            <select name="destination" id="destination"><br>
+                    <option selected="selected">Aucune</option><br>
                     <option> Marseille </option>
                     <option> Paris </option>
                     <option> Barcelone </option>
@@ -52,20 +51,16 @@
                     <option> Rome </option>
                     <option> Kuta </option>
                     <option> Bora Bora</option>
-                </select>
-            </div>
+            </select><br>
+            
+            <label for="départ">Date de départ</label><br>
+            <input type="date" name="départ" id="départ"><br>
 
-            <div class ="form-group">
-                <label for="départ">Date de départ</label>
-                <input type="date" name="départ" id="départ">
-
-                <label for="retour">Date de retour</label>
-                <input type="date" name="retour" id="retour">
-            </div>
-
-            <div class ="form-group">
-                <label for="adultes">Nombres d'adultes</label>
-                <select name="adultes" id="adultes">
+            <label for="retour">Date de retour</label><br>
+            <input type="date" name="retour" id="retour"><br>
+            
+            <label for="adultes">Nombres d'adultes</label><br>
+            <select name="adultes" id="adultes"><br>
                     <option selected="selected">0 Adulte</option>
                     <option> 1 Adulte</option>
                     <option> 2 Adultes</option>
@@ -73,10 +68,10 @@
                     <option> 4 Adultes</option>
                     <option> 5 Adultes</option>
                     <option> 6 Adultes</option>
-                </select>
+            </select><br>
 
-                <label for="enfants">Nombres d'enfants</label>
-                <select name="enfants" id="enfants">
+            <label for="enfants">Nombres d'enfants</label><br>
+            <select name="enfants" id="enfants"><br>
                     <option selected="selected">0 Enfant</option>
                     <option> 1 Enfant</option>
                     <option> 2 Enfants</option>
@@ -84,28 +79,25 @@
                     <option> 4 Enfants</option>
                     <option> 5 Enfants</option>
                     <option> 6 Enfants</option>
-            </select>
-            </div>
-
-            <div class ="form-group">
-                <label for="Ptitdéj">Petit déjeunner</label>
-                <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
-                <input type="radio" name="Petit déjeuner" value="Non" checked> Non
-            </div>
-
-            <div class ="form-group">
-                <label for="Animaux">Animaux</label>
-                <input type="radio" name="Animaux" value="Oui" checked> Oui
-                <input type="radio" name="Animaux" value="Non" checked> Non
-            </div>
+            </select><br>
+    
+            <label for="Ptitdéj">Petit déjeunner</label><br>
+            <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
+            <input type="radio" name="Petit déjeuner" value="Non" checked> Non<br>
+            
+            <label for="Animaux">Animaux</label><br>
+            <input type="radio" name="Animaux" value="Oui" checked> Oui
+            <input type="radio" name="Animaux" value="Non" checked> Non<br>
+            
 
             <div class ="button-submit">
                 <input type="submit" value="Lancer la recherche" name="recherche" id="recherche">
             </div>
+
         </div>
     </form>
 
-    <p class="p1">Nos offres les plus consultées : </p>
+    <p class="offre">Nos offres les plus consultées : </p>
 
     <div class="Monslide" style="max-width:450px">
         <img class="mySlides" src="../image/Marseille.jpg" style="width:100%">
