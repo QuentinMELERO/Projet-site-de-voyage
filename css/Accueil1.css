@@ -171,8 +171,43 @@ footer{
     background-color: #ddd;
     }
 
+/*Style du tableau*/
+
+.tableau{
+    display : grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    background-color: #afa7a7;
+    padding: 5px;
+}
 
 
+/*Style des éléments du tableau*/
+ .tableau-item{
+     background-color: whitesmoke;
+     border:1px solid #afa7a7;
+     padding:10px;
+     font-size : 20px;
+     text-align:center;
+     font-family:  'Acme', sans-serif;
+     text-transform: uppercase;
+
+}
+
+.tableau-item:hover{
+    transform:scale(1.05);
+    transition:0.1 all
+}
 
 
-    
+/* La barre de navigation reste en haut*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
+}
+

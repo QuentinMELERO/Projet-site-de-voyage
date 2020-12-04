@@ -8,7 +8,7 @@ class Destination{
 }
 
 tabDest = [
-    new Destination("Marseille",true,500,false),
+    new Destination("Marseille",true,700,false),
     new Destination("Paris",true,500,false),
     new Destination("Barcelone",true,500,false),
     new Destination("Madrid",true,500,false),
@@ -32,14 +32,13 @@ for ( const v of tabDest){
 
     newContent = clone.firstElementChild.innerHTML
     .replace(/{{ville}}/g, v._ville)
-    .replace(/{{prix}}/g, v._prix);
+    .replace(/{{prix}}/g, v._prix)
+    .replace(/{{id}}/g, tabDest.indexOf(v));
 
 clone.firstElementChild.innerHTML = newContent
 
 document.querySelector(".tableau").appendChild(clone);
 }
-
-
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
