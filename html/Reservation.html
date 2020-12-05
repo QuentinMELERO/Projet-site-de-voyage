@@ -7,148 +7,159 @@
     <link rel="stylesheet" href="../css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>En voyage organisé</title>
-    
 </head>
 
-<body>
+    <body>
 
-    <div class="header">
-        <div class="logo">
-            <img src="../image/logo.jpg" alt="logo" width="400">
+        <div class="header">
+            <div class="logo">
+                <img src="../image/logo.jpg" alt="logo" width="400">
+            </div>
+            <p>Personne peut nous rivaliser</p>
         </div>
-        <p>Personne peut nous rivaliser</p>
-    </div>
 
-    <div class="nav-barre">
-        <a href="Accueil.html">Accueil</a>
-        <a href="Destination.html">Destination</a>
-        <a href="MonProfil.html">Mon profil</a>
-        <a href="MonPanier.html">Mon panier</a>
-        <a href="Pagecontact.html">A propos&Contact</a>
-    </div>
+        <div class="nav-barre">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Destination.html">Destination</a>
+            <a href="MonProfil.html">Mon profil</a>
+            <a href="MonPanier.html">Mon panier</a>
+            <a href="Pagecontact.html">A propos&Contact</a>
+        </div>
 
-    <link rel="stylesheet" href="../css/Reservation.css">
-    
-
-             <form id="regForm" action="">
+        <link rel="stylesheet" href="../css/Reservation.css">
+        <!--<div class="formulairegauche">
+        
+            <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()">
 
                 <h1>Vos informations :</h1>
-                
-                <!-- One "tab" for each step in the form: -->                
+
                 <div class="tab">Identité:
-                    <p><input placeholder="Nom ..." oninput="this.className = ''"></p><br>
-                    <p><input placeholder="Prénom ..." oninput="this.className = ''"></p><br>
+                    <p><input placeholder="Nom ..." name="Nom"></p><br>
+                    <p><input placeholder="Prénom ..." name="Prenom"></p><br>
                 </div>
-                        
-                <div class="tab">Vous contactez:
-                    <p><input placeholder="E-mail ..." oninput="this.className = ''"></p><br>
-                    <p><input placeholder="Phone ..." oninput="this.className = ''"></p><br>
+                            
+                <div class="tab">Vos coordonnées:
+                    <p><input placeholder="E-mail ..." name="Mail"></p><br>
+                    <p><input placeholder="Phone ..." name="Numtel"></p><br>
                 </div>
-                        
-                <div class="tab">Dates
-                    <p><input placeholder="Date de départ ..." oninput="this.className = ''"></p><br>
-                    <p><input placeholder="Date de retour ..." oninput="this.className = ''"></p><br>
+                            
+                <div class="tab">Vos dates :
+                    <p><input placeholder="Date de départ ..." name="Datedep" id="Datedep"></p><br>
+                    <p><input placeholder="Date de retour ..." name="Dateret" id="Dateret" onchange="duree()"></p><br>
                 </div>
-                
+                    
                 <div class="tab">Famille:
-                    <p><input type="number" id="Nombre d'adultes" placeholder="Nombre d'adultes ..." oninput="this.className = ''"></p><br>
-                    <p><input type="number" id="Nombre d'enfants" placeholder="Nombre d'enfants ..." oninput="this.className = ''"></p><br>
+                    <p><input type="number" id="Nombre d'adultes" placeholder="Nombre d'adultes ..." name="Nbad"></p><br>
+                    <p><input type="number" id="Nombre d'enfants" placeholder="Nombre d'enfants ..." name="Nbenf"></p><br>
                 </div>
-                
+                    
                 <div class="tab">Petit déjeuner: 
-                    <input type="radio" name="Petit déjeuner" value="Oui">  <input type="radio" name="Petit déjeuner" value="Non" checked> Non </p><br>
-                    <p><input type="number" placeholder="Nombre d'enfants ..." oninput="this.className = ''"></p><br>
+                    <p><input type="radio" name="Ptitdej" value="Oui" id="odej" checked> Oui</p>
+                    <p><input type="radio" name="Ptitdej" value="Non" id="ndej" checked> Non<p><br>
+                </div>
+
+                <div class="tab">Animaux: 
+                    <p><input type="radio" name="Animaux" value="Oui" id="Oui" checked> Oui</p>
+                    <p><input type="radio" name="Animaux" value="Non" id="Non" checked> Non<p><br>
                 </div>
 
                 <div class="tab">Informations supplémentaires:
                     <p><input type="radio" name="" oninput="this.className = ''"></p><br>
                     <p><input type="number" placeholder="Nombre d'enfants ..." oninput="this.className = ''"></p><br>
                 </div>
-                
-                <div class="tab">Famille:
-                    <p><input type="radio" name="Petit déjeuner" value="Oui" checked> Oui  <input type="radio" name="Petit déjeuner" value="Non" checked> Non </p><br>
-                    <p><input type="number" placeholder="Nombre d'enfants ..." oninput="this.className = ''"></p><br>
+
+                <div class="tab">Renseignements utiles :
+                    <p><textarea name="Renseign"></textarea></p><br>
                 </div>
-                
+
+                <div class="tab">Validation :
+                    <div class ="button-submit">
+                        <input type="submit" value="Valider">
+                    </div>
+                </div>
+
                 <div style="overflow:auto;">
-                <div style="float:right;">
-                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Précédent</button>
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
-                </div>
-                </div>
-                
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Précédent</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+                    </div>
+                </div>-->
+                    
                 <!-- Circles which indicates the steps of the form: -->
-                <div style="text-align:center;margin-top:40px;">
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
-                <span class="step"></span>
+                <!--<div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+        </div>-->
+
+            
+        <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()">
+            <div class="formulaire">
+                <p class="p2">Vos informations : </p><br>     
+                
+                    <label for="Nom">Nom : </label><br> <!Attention attribut name>
+                    <input type="text" name="Nom"><br>
+
+                    <label for="Prenom">Prénom : </label><br>
+                    <input type="text" name="Prenom"><br>
+
+                    <label for="Mail">Adresse mail : </label><br>
+                    <input type="email" name="Mail"><br>
+
+                    <label for="Numtel">Téléphone : </label><br>
+                    <input type="tel" name="Numtel"><br>
+
+                    <label for="Datedep">Date de départ : </label><br>
+                    <input type="date" name="Datedep" id="Datedep"><br>
+
+                    <label for="Dateret">Date de retour : </label><br>
+                    <input type="date" name="Dateret" id="Dateret" onchange="duree()"><br>
+
+                    <label for="Nbad">Nombre d'adultes : </label><br>
+                    <input type="number" name="Nbad" id="Nombre d'adultes" min="1" max="10"><br>
+
+                    <label for="Nbenf">Nombre d'enfants (-12ans) : </label><br>
+                    <input type="number" name="Nbenf" id="Nombre d'enfants"><br>
+ 
+                    <label for="Ptitdej">Petit déjeunner :</label><br>
+                    <input type="radio" name="Ptitdej" value="Oui" id="odej" checked> Oui
+                    <input type="radio" name="Ptitdej" value="Non" id="ndej" checked> Non<br>
+                    
+                    <label for="Animaux">Animaux :</label><br>
+                    <input type="radio" name="Animaux" value="Oui" id="Oui" checked> Oui
+                    <input type="radio" name="Animaux" value="Non" id="Non" checked> Non<br>
+
+                    <label for="Ptot">Prix total : </label><br>
+                    <input type="text" name="Ptot"><br>
+            
+                    <label>Renseignements utiles </label><br>
+                    <textarea name="Renseign"></textarea><br>
+                
+                <div class ="button-submit">
+                    <input type="submit" value="Valider">
+                </div>
+                <div class="button-reset">
+                    <input type="reset" value="Recommencer">
                 </div>
                 
-            </form>
-        </div>
-    </div>
-        
-    <!--<form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()">
-        <div class="formulaire">
-            <p class="p2">Vos informations : </p><br>     
-            
-                <label for="Nom">Nom : </label><br> <!Attention attribut name>
-                <input type="text" name="Nom"><br>
 
-                <label for="Prenom">Prénom : </label><br>
-                <input type="text" name="Prenom"><br>
-
-                <label for="Mail">Adresse mail : </label><br>
-                <input type="email" name="Mail"><br>
-
-                <label for="Numtel">Téléphone : </label><br>
-                <input type="tel" name="Numtel"><br>
-
-                <label for="Datedep">Date de départ : </label><br>
-                <input type="date" name="Datedep" id="Datedep"><br>
-
-                <label for="Dateret">Date de retour : </label><br>
-                <input type="date" name="Dateret" id="Dateret" onchange="duree()"><br>
-
-                <label for="Nbad">Nombre d'adultes : </label><br>
-                <input type="number" name="Nbad" id="Nombre d'adultes"><br>
-
-                <label for="Nbenf">Nombre d'enfants (-12ans) : </label><br>
-                <input type="number" name="Nbenf" id="Nombre d'enfants"><br>
-
-                <label for="Ptot">Prix total : </label><br>
-                <input type="text" name="Ptot"><br>
-        
-                <label for="Ptitdej">Petit déjeunner : </label><br>
-                <input type="radio" name="Ptitdej" value="Oui" id="odej" checked> Oui
-                <input type="radio" name="Ptitdej" value="Non" id="ndej" checked> Non<br>
-                
-                <label for="Animaux">Animaux : </label><br>
-                <input type="radio" name="Animaux" value="Oui" id="Oui" checked> Oui
-                <input type="radio" name="Animaux" value="Non" id="Non" checked> Non<br>
-
-                <label>Renseignements utiles </label><br>
-                <textarea name="Renseign"></textarea><br>
-            
-            <div class ="button-submit">
-                <input type="submit" value="Valider">
             </div>
+        </form> 
 
+        <p class="p1" id="titre"></p>
+        <div class="PhotoRes">
+            <img id="photo" width="450px">
         </div>
-    </form> -->
 
-    <p class="p1" id="titre"></p>
-    <div class="PhotoRes">
-        <img id="photo" width="450px">
-    </div>
+        <script src="../js/Reservation.js"></script>
 
-    <script src="../js/Reservation.js"></script>
+        <div style="height:5000px">
+            <button onclick="retourHaut()" id="haut" title="Retour haut de page">Haut</button>
+        </div>
 
-    <div style="height:5000px">
-        <button onclick="retourHaut()" id="haut" title="Retour haut de page">Haut</button>
-    </div>
-
-</body>
+    </body>
 
 </html>

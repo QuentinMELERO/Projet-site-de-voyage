@@ -49,7 +49,7 @@ function Calculer(){
     B=document.getElementById("Nombre d'enfants").value * tabDest[sejour_id]._prix * 0.4;
     B1=document.getElementById("Nombre d'enfants").value;
     if(document.querySelector('#odej').checked){
-        document.formulaireresa.Ptot.value=(parseFloat(A)+parseFloat(B)+10*parseFloat(A1)+10*parseFloat(B1))*C
+        document.formulaireresa.Ptot.value=(parseFloat(A)+parseFloat(B)+12*parseFloat(A1)+12*parseFloat(B1))*C
     }
     else{
         document.formulaireresa.Ptot.value=(parseFloat(A)+parseFloat(B))*C

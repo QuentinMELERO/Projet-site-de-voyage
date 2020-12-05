@@ -170,3 +170,10 @@ button:hover {
 .step.finish {
     background-color: #4CAF50;
 }
+
+.formulairegauche {
+    float : left;
+    margin-right :10px;
+    margin-left: 100px;
+    width: 700px;
+    }

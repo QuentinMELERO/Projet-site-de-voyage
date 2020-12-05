@@ -22,7 +22,7 @@ tabDest = [
     new Destination("Johannesburg",true,500,false),
     new Destination("Rome",true,500,false),
     new Destination("Kuta",true,500,false),
-    new Destination("Bora-bora",true,500,false)
+    new Destination("Bora-bora",true,1000,false)
 ]
 
 
