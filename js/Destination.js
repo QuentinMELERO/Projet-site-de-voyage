@@ -1,28 +1,29 @@
 class Destination{
-    constructor(ville,petitdej,prix,animaux){
+    constructor(ville,petitdej,prix,animaux,continent){
         this._ville = ville;
         this._petitdej = petitdej;
         this._prix = prix;
         this._animaux = animaux;
+        this._continent = continent;
     }
 }
 
 tabDest = [
-    new Destination("Marseille",true,700,false),
-    new Destination("Paris",true,500,false),
-    new Destination("Barcelone",true,500,false),
-    new Destination("Madrid",true,500,false),
-    new Destination("Los-Angeles",true,500,false),
-    new Destination("Cancun",true,500,false),
-    new Destination("Lima",true,500,false),
-    new Destination("Rio-de-Janeiro",true,500,false),
-    new Destination("Londres",true,500,false),
-    new Destination("Shanghai",true,500,false),
-    new Destination("Phuket",true,500,false),
-    new Destination("Johannesburg",true,500,false),
-    new Destination("Rome",true,500,false),
-    new Destination("Kuta",true,500,false),
-    new Destination("Bora-bora",true,1000,false)
+  new Destination("Marseille",true,700,false,"Europe"),
+  new Destination("Paris",true,500,false,"Europe"),
+  new Destination("Barcelone",true,500,false,"Europe"),
+  new Destination("Madrid",true,500,false,"Europe"),
+  new Destination("Los-Angeles",true,500,false,"Amerique"),
+  new Destination("Cancun",true,500,false,"Amerique"),
+  new Destination("Lima",true,500,false,"Amerique"),
+  new Destination("Rio-de-Janeiro",true,500,false,"Amerique"),
+  new Destination("Londres",true,500,false,"Europe"),
+  new Destination("Shanghai",true,500,false,"Asie"),
+  new Destination("Phuket",true,500,false,"Asie"),
+  new Destination("Johannesburg",true,500,false,"Afrique"),
+  new Destination("Rome",true,500,false,"Europe"),
+  new Destination("Kuta",true,500,false,"Asie"),
+  new Destination("Bora-bora",true,500,false,"Asie")
 ]
 
 
@@ -39,6 +40,8 @@ clone.firstElementChild.innerHTML = newContent
 
 document.querySelector(".tableau").appendChild(clone);
 }
+
+
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};

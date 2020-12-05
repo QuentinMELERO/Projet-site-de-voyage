@@ -30,29 +30,15 @@
         <form method="GET">
             <div class="barre-recherche">
                 <p class="rech">Trouvez le voyage de vos rêves</p><br>
-                <label for="destination">Destination</label><br>
-                <select name="destination" id="destination"><br>
-                        <option selected="selected">Aucune</option><br>
-                        <option> Marseille </option>
-                        <option> Paris </option>
-                        <option> Barcelone </option>
-                        <option> Madrid </option>
-                        <option> Los Angeles</option>
-                        <option> Cancun </option>
-                        <option> Lima  </option>
-                        <option> Rio de Janeiro</option>
-                        <option> Londres </option>
-                        <option> Shanghai </option>
-                        <option> Phuket </option>
-                        <option> Johannesburg</option>
-                        <option> Rome </option>
-                        <option> Kuta </option>
-                        <option> Bora Bora</option>
-                </select><br>
+
+                <input type="checkbox" name="europe" value="europe" id="choixeurope" onclick="filtreeurope()"> Europe
+                <input type="checkbox" name="asie" value="Asie" id="choixasie" onclick="filtreasie()"> Asie
+                <input type="checkbox" name="afrique" value="Afrique" id="choixafrique" onclick="filtreasie()"> Afrique
+                <input type="checkbox" name="amerique" value="Amerique" id="choixamerique" onclick="filtreamerique()"> Amerique<br><br>
         
                 <label for="Ptitdéj">Petit déjeunner</label><br>
                 <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
-                <input type="radio" name="Petit déjeuner" value="Non" checked> Non<br>
+                <input type="radio" name="Petit déjeuner" value="Non" checked> Non<br><br>
                 
                 <label for="Animaux">Animaux</label><br>
                 <input type="radio" name="Animaux" value="Oui" checked> Oui
