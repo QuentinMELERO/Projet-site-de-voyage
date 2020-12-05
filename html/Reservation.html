@@ -24,7 +24,7 @@
         <a href="Destination.html">Destination</a>
         <a href="MonProfil.html">Mon profil</a>
         <a href="MonPanier.html">Mon panier</a>
-        <a href="Pagecontact.html">A propos& Contact</a>
+        <a href="Pagecontact.html">A propos&Contact</a>
     </div>
 
     <link rel="stylesheet" href="../css/Reservation.css">
@@ -93,7 +93,7 @@
         <div class="formulaire">
             <p class="p2">Vos informations : </p><br>     
             
-                <label for="Nom">Nom : </label><br>
+                <label for="Nom">Nom : </label><br> <!Attention attribut name>
                 <input type="text" name="Nom"><br>
 
                 <label for="Prenom">Prénom : </label><br>
@@ -106,10 +106,10 @@
                 <input type="tel" name="Numtel"><br>
 
                 <label for="Datedep">Date de départ : </label><br>
-                <input type="date" name="Datedep"><br>
+                <input type="date" name="Datedep" id="Datedep"><br>
 
                 <label for="Dateret">Date de retour : </label><br>
-                <input type="date" name="Dateret"><br>
+                <input type="date" name="Dateret" id="Dateret" onchange="duree()"><br>
 
                 <label for="Nbad">Nombre d'adultes : </label><br>
                 <input type="number" name="Nbad" id="Nombre d'adultes"><br>
@@ -120,16 +120,16 @@
                 <label for="Ptot">Prix total : </label><br>
                 <input type="text" name="Ptot"><br>
         
-                <label for="Ptitdéj">Petit déjeunner : </label><br>
-                <input type="radio" name="Petit déjeuner" value="Oui" checked> Oui
-                <input type="radio" name="Petit déjeuner" value="Non" checked> Non<br>
+                <label for="Ptitdej">Petit déjeunner : </label><br>
+                <input type="radio" name="Ptitdej" value="Oui" id="odej" checked> Oui
+                <input type="radio" name="Ptitdej" value="Non" id="ndej" checked> Non<br>
                 
                 <label for="Animaux">Animaux : </label><br>
-                <input type="radio" name="Animaux" value="Oui" checked> Oui
-                <input type="radio" name="Animaux" value="Non" checked> Non<br>
+                <input type="radio" name="Animaux" value="Oui" id="Oui" checked> Oui
+                <input type="radio" name="Animaux" value="Non" id="Non" checked> Non<br>
 
                 <label>Renseignements utiles </label><br>
-                <textarea></textarea><br>
+                <textarea name="Renseign"></textarea><br>
             
             <div class ="button-submit">
                 <input type="submit" value="Valider">
