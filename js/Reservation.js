@@ -9,20 +9,20 @@ class Destination{
 }
 
 tabDest = [
-    new Destination("Marseille",true,700,false,"Europe"),
-    new Destination("Paris",true,500,false,"Europe"),
-    new Destination("Barcelone",true,500,false,"Europe"),
-    new Destination("Madrid",true,500,false,"Europe"),
-    new Destination("Los-Angeles",true,500,false,"Amerique"),
-    new Destination("Cancun",true,500,false,"Amerique"),
-    new Destination("Lima",true,500,false,"Amerique"),
-    new Destination("Rio-de-Janeiro",true,500,false,"Amerique"),
-    new Destination("Londres",true,500,false,"Europe"),
-    new Destination("Shanghai",true,500,false,"Asie"),
-    new Destination("Phuket",true,500,false,"Asie"),
-    new Destination("Johannesburg",true,500,false,"Afrique"),
-    new Destination("Rome",true,500,false,"Europe"),
-    new Destination("Kuta",true,500,false,"Asie"),
+    new Destination("Marseille",true,100,false,"Europe"),
+    new Destination("Paris",true,150,false,"Europe"),
+    new Destination("Barcelone",true,150,false,"Europe"),
+    new Destination("Madrid",true,150,false,"Europe"),
+    new Destination("Los-Angeles",true,300,false,"Amerique"),
+    new Destination("Cancun",true,350,false,"Amerique"),
+    new Destination("Lima",true,350,false,"Amerique"),
+    new Destination("Rio-de-Janeiro",true,350,false,"Amerique"),
+    new Destination("Londres",true,200,false,"Europe"),
+    new Destination("Shanghai",true,400,false,"Asie"),
+    new Destination("Phuket",true,250,false,"Asie"),
+    new Destination("Johannesburg",true,400,false,"Afrique"),
+    new Destination("Rome",true,150,false,"Europe"),
+    new Destination("Kuta",true,400,false,"Asie"),
     new Destination("Bora-bora",true,500,false,"Asie")
 ]
 
@@ -45,10 +45,10 @@ function duree() {
 }
 
 function Calculer(){
-    A=document.getElementById("Nombre_dadultes").value * tabDest[sejour_id]._prix;
-    A1=document.getElementById("Nombre_dadultes").value;
-    B=document.getElementById("Nombre_denfants").value * tabDest[sejour_id]._prix * 0.4;
-    B1=document.getElementById("Nombre_denfants").value;
+    A=document.getElementById("Nbdadultes").value * tabDest[sejour_id]._prix;
+    A1=document.getElementById("Nbdadultes").value;
+    B=document.getElementById("Nbdenfants").value * tabDest[sejour_id]._prix * 0.4;
+    B1=document.getElementById("Nbdenfants").value;
     if(document.querySelector('#odej').checked){
         document.formulaireresa.Ptot.value=(parseFloat(A)+parseFloat(B)+12*parseFloat(A1)+12*parseFloat(B1))*C
     }
@@ -57,29 +57,6 @@ function Calculer(){
     }
 }
 
-function check_form()
-{
-	var errors = new Array();
-	var input_Nom = document.getElementById('Nom');
-  var input_Prenom = document.getElementById('Prenom');
-  var input_Mail = document.getElementById('Mail');
-  var input_Datedep = document.getElementById('Datedep');
-  var input_Dateret = document.getElementById('Dateret');
-  var input_Nombre_dadultes = document.getElementById('Nombre_dadultes');
-  var input_Nombre_denfants = document.getElementById('Nombre_denfants');
-
-	if(input_Nom.value = '')
-		errors.push('Vous devez renseigner le nom.');
-	if(input_Mail.value = '')
-		errors.push('Vous devez renseigner le mail.');
-
-	if(errors.length > 0)
-	{
-		alert(errors.join('<br/>'));
-		return false;
-	}
-	return true;
-}
 
 
 // Fonction pour afficher le lien de retour vers le haut de page

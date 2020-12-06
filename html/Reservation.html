@@ -96,35 +96,35 @@
         </div>-->
 
             
-        <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()" onsubmit="return check_form();"">
+        <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()" onsubmit="return check_form();">
             <div class="formulaire">
                 <p class="p2">Vos informations : </p><br>     
                 
-                    <label for="Nom">Nom : </label><br> <!Attention attribut name>
-                    <input type="text" name="Nom" id="Nom"><br>
+                    <label for="Nom">Nom* : </label><br>
+                    <input type="text" name="Nom" id="Nom" required><br>
 
-                    <label for="Prenom">Prénom : </label><br>
-                    <input type="text" name="Prenom" id="Nom"><br>
+                    <label for="Prenom">Prénom* : </label><br>
+                    <input type="text" name="Prenom" id="Prenom" required><br>
 
-                    <label for="Mail">Adresse mail : </label><br>
-                    <input type="email" name="Mail" id="Nom"><br>
+                    <label for="Mail">Adresse mail* : </label><br>
+                    <input type="email" name="Mail" id="Mail" required><br>
 
                     <label for="Numtel">Téléphone : </label><br>
-                    <input type="tel" name="Numtel"><br>
+                    <input type="tel" name="Numtel" ><br>
 
-                    <label for="Datedep">Date de départ : </label><br>
-                    <input type="date" name="Datedep" id="Datedep"><br>
+                    <label for="Datedep">Date de départ* : </label><br>
+                    <input type="date" name="Datedep" id="Datedep" required><br>
 
-                    <label for="Dateret">Date de retour : </label><br>
-                    <input type="date" name="Dateret" id="Dateret" onchange="duree()"><br>
+                    <label for="Dateret">Date de retour* : </label><br>
+                    <input type="date" name="Dateret" id="Dateret" onchange="duree()" required><br>
 
-                    <label for="Nbad">Nombre d'adultes : </label><br>
-                    <input type="number" name="Nbad" id="Nombre_dadultes" min="1" max="10"><br>
+                    <label for="Nbad">Nombre d'adultes* : </label><br>
+                    <input type="number" name="Nbad" id="Nbdadultes" min="1" max="10" required><br>
 
-                    <label for="Nbenf">Nombre d'enfants (-12ans) : </label><br>
-                    <input type="number" name="Nbenf" id="Nombre_denfants"><br>
+                    <label for="Nbenf">Nombre d'enfants* (-12ans) : </label><br>
+                    <input type="number" name="Nbenf" id="Nbdenfants" min="0" max="10" required><br>
  
-                    <label for="Ptitdej">Petit déjeunner :</label><br>
+                    <label for="Ptitdej">Petit déjeunner (12€ pers/jour) :</label><br>
                     <input type="radio" name="Ptitdej" value="Oui" id="odej" checked> Oui
                     <input type="radio" name="Ptitdej" value="Non" id="ndej" checked> Non<br>
                     
@@ -137,6 +137,7 @@
             
                     <label>Renseignements utiles </label><br>
                     <textarea name="Renseign"></textarea><br>
+                    <p>Les éléments marqués d’une * doivent obligatoirement être remplis avant soumissions du formulaire.</p>
                 
                 <div class ="button-submit">
                     <input type="submit" value="Valider">

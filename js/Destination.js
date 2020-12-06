@@ -9,20 +9,20 @@ class Destination{
 }
 
 tabDest = [
-  new Destination("Marseille",true,700,false,"Europe"),
-  new Destination("Paris",true,500,false,"Europe"),
-  new Destination("Barcelone",true,500,false,"Europe"),
-  new Destination("Madrid",true,500,false,"Europe"),
-  new Destination("Los-Angeles",true,500,false,"Amerique"),
-  new Destination("Cancun",true,500,false,"Amerique"),
-  new Destination("Lima",true,500,false,"Amerique"),
-  new Destination("Rio-de-Janeiro",true,500,false,"Amerique"),
-  new Destination("Londres",true,500,false,"Europe"),
-  new Destination("Shanghai",true,500,false,"Asie"),
-  new Destination("Phuket",true,500,false,"Asie"),
-  new Destination("Johannesburg",true,500,false,"Afrique"),
-  new Destination("Rome",true,500,false,"Europe"),
-  new Destination("Kuta",true,500,false,"Asie"),
+  new Destination("Marseille",true,100,false,"Europe"),
+  new Destination("Paris",true,150,false,"Europe"),
+  new Destination("Barcelone",true,150,false,"Europe"),
+  new Destination("Madrid",true,150,false,"Europe"),
+  new Destination("Los-Angeles",true,300,false,"Amerique"),
+  new Destination("Cancun",true,350,false,"Amerique"),
+  new Destination("Lima",true,350,false,"Amerique"),
+  new Destination("Rio-de-Janeiro",true,350,false,"Amerique"),
+  new Destination("Londres",true,200,false,"Europe"),
+  new Destination("Shanghai",true,400,false,"Asie"),
+  new Destination("Phuket",true,250,false,"Asie"),
+  new Destination("Johannesburg",true,400,false,"Afrique"),
+  new Destination("Rome",true,150,false,"Europe"),
+  new Destination("Kuta",true,400,false,"Asie"),
   new Destination("Bora-bora",true,500,false,"Asie")
 ]
 
