@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/MonProfil.css">
     <title>En voyage organisé</title>
 </head>
 
@@ -26,7 +27,22 @@
         <a href="Pagecontact.html">A propos&Contact</a>
     </div>
 
-    <p>Mon Profil</p>
+    <div class="container">
+        <div class="container1">
+            <form action="../html/Accueil.html">
+                <h1>Connexion</h1>
+            <label for="usrname">Nom d'utilisateur</label>
+            <input type="text" id="usrname" name="usrname" required>
+        
+            <label for="psw">Mot de Passe</label>
+            <input type="password" id="psw" name="psw" required>
+            
+            <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+          
+    <script src="../js/MonProfil.js" defer async></script>
 
     <footer>
         <p class="footer">Corsetti Melero CORPORATION</p>
