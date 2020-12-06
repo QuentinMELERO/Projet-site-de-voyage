@@ -40,6 +40,7 @@ function duree() {
         C = A/1000/60/60/24 
     }
     else {
+      document.getElementById("Dateret").value="false"
       alert("Veuillez mettre une date anterieur à celle de départ")
     }
 }

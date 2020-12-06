@@ -43,7 +43,28 @@
 .button-submit input:hover {
     background-color: #ddd;
     color: black;
-    transform:scale(1.3);
+    transform:scale(1.1);
+    transition:0.1 all
+}
+
+.button-reset{
+    text-align: center;
+}
+
+.button-reset input{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-size: 10px;
+    margin: 15px;
+    font-family:  'Acme', sans-serif;
+    border-radius: 40px;
+}
+
+.button-reset input:hover {
+    background-color: #ddd;
+    color: black;
+    transform:scale(1.1);
     transition:0.1 all
 }
 
