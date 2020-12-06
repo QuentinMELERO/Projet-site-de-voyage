@@ -45,16 +45,40 @@ function duree() {
 }
 
 function Calculer(){
-    A=document.getElementById("Nombre d'adultes").value * tabDest[sejour_id]._prix;
-    A1=document.getElementById("Nombre d'adultes").value;
-    B=document.getElementById("Nombre d'enfants").value * tabDest[sejour_id]._prix * 0.4;
-    B1=document.getElementById("Nombre d'enfants").value;
+    A=document.getElementById("Nombre_dadultes").value * tabDest[sejour_id]._prix;
+    A1=document.getElementById("Nombre_dadultes").value;
+    B=document.getElementById("Nombre_denfants").value * tabDest[sejour_id]._prix * 0.4;
+    B1=document.getElementById("Nombre_denfants").value;
     if(document.querySelector('#odej').checked){
         document.formulaireresa.Ptot.value=(parseFloat(A)+parseFloat(B)+12*parseFloat(A1)+12*parseFloat(B1))*C
     }
     else{
         document.formulaireresa.Ptot.value=(parseFloat(A)+parseFloat(B))*C
     }
+}
+
+function check_form()
+{
+	var errors = new Array();
+	var input_Nom = document.getElementById('Nom');
+  var input_Prenom = document.getElementById('Prenom');
+  var input_Mail = document.getElementById('Mail');
+  var input_Datedep = document.getElementById('Datedep');
+  var input_Dateret = document.getElementById('Dateret');
+  var input_Nombre_dadultes = document.getElementById('Nombre_dadultes');
+  var input_Nombre_denfants = document.getElementById('Nombre_denfants');
+
+	if(input_Nom.value = '')
+		errors.push('Vous devez renseigner le nom.');
+	if(input_Mail.value = '')
+		errors.push('Vous devez renseigner le mail.');
+
+	if(errors.length > 0)
+	{
+		alert(errors.join('<br/>'));
+		return false;
+	}
+	return true;
 }
 
 

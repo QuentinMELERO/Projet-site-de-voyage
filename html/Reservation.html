@@ -96,18 +96,18 @@
         </div>-->
 
             
-        <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()">
+        <form name="formulaireresa" action="Recapitulatif-des-infos.html" method="GET" onchange="Calculer()" onsubmit="return check_form();"">
             <div class="formulaire">
                 <p class="p2">Vos informations : </p><br>     
                 
                     <label for="Nom">Nom : </label><br> <!Attention attribut name>
-                    <input type="text" name="Nom"><br>
+                    <input type="text" name="Nom" id="Nom"><br>
 
                     <label for="Prenom">Prénom : </label><br>
-                    <input type="text" name="Prenom"><br>
+                    <input type="text" name="Prenom" id="Nom"><br>
 
                     <label for="Mail">Adresse mail : </label><br>
-                    <input type="email" name="Mail"><br>
+                    <input type="email" name="Mail" id="Nom"><br>
 
                     <label for="Numtel">Téléphone : </label><br>
                     <input type="tel" name="Numtel"><br>
@@ -119,10 +119,10 @@
                     <input type="date" name="Dateret" id="Dateret" onchange="duree()"><br>
 
                     <label for="Nbad">Nombre d'adultes : </label><br>
-                    <input type="number" name="Nbad" id="Nombre d'adultes" min="1" max="10"><br>
+                    <input type="number" name="Nbad" id="Nombre_dadultes" min="1" max="10"><br>
 
                     <label for="Nbenf">Nombre d'enfants (-12ans) : </label><br>
-                    <input type="number" name="Nbenf" id="Nombre d'enfants"><br>
+                    <input type="number" name="Nbenf" id="Nombre_denfants"><br>
  
                     <label for="Ptitdej">Petit déjeunner :</label><br>
                     <input type="radio" name="Ptitdej" value="Oui" id="odej" checked> Oui
