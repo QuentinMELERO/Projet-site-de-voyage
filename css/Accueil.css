@@ -163,13 +163,13 @@ footer{
     text-decoration: none;
 }
     
-/* Add a hover effect if you want */
+/* Effet lorsqu'on passe la souris */
   
 .fa:hover {
     opacity: 0.7;
 }
     
-/* Set a specific color for each brand */
+/* Style pour chaque logo */
     
 /*Facebook*/
   
