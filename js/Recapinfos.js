@@ -36,3 +36,8 @@ function recap(){
     let renseign = new URLSearchParams(window.location.search).get("Renseign");
     document.getElementById("renseignrecap").value=renseign
 }
+
+function random(){
+    let num = Math.floor(10000*Math.random());
+    document.getElementById("numresa").textContent="Réservation n°" + num;
+}

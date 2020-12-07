@@ -79,9 +79,6 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 } 
 
-function random(){
-  let random = Math.round(Math.random() * 10000)
-}
 
 
 

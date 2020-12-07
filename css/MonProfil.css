@@ -53,6 +53,7 @@ input {
   .container1 {
     background-color: #f1f1f1;
     padding: 20px;
+    border-radius: 20px;
   }
   
   /* The message box is shown when the user clicks on the password field */

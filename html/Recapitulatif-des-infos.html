@@ -9,7 +9,7 @@
         <title>En voyage organisé</title>
     </head>
 
-    <body onload="recap()">
+    <body onload="recap()" onload="random()">
         
         <div class="header">
             <div class="logo">
@@ -59,10 +59,18 @@
             Renseignements utiles: <br>
             <textarea id="renseignrecap"></textarea><br>
             <input type="submit" value="Valider">
-            <p>Réservation n°"random"</p>
         </fieldset>
 
+        <p id="numresa"></p>
+
+        <p class="p1" id="titre"></p>
+        <div class="PhotoRes">
+            <img id="photo" width="450px">
+        </div>
+
         <script src="../js/Recapinfos.js"></script>
+        <script src="../js/Reservation.js"></script>
+
         
     </body>
 
