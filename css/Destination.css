@@ -46,7 +46,7 @@
 #haut {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 30px;
     z-index: 99;
     border: none;
@@ -61,4 +61,20 @@
 
 #haut:hover {
     background-color: #ddd;
+}
+
+footer{
+    background-color: #afa7a7;
+    color:black;
+    position:fixed;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.footer{
+    font-family:  'Acme', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
 }
