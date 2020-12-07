@@ -10,6 +10,7 @@
 
 
 /*Style des éléments du tableau*/
+
  .tableau-item{
      background-color: whitesmoke;
      border:1px solid #afa7a7;
@@ -28,6 +29,7 @@
 
 
 /* La barre de navigation reste en haut*/
+
 .sticky {
     position: fixed;
     top: 0;
@@ -55,8 +57,8 @@
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
-    }
+}
 
 #haut:hover {
     background-color: #ddd;
-    }
+}

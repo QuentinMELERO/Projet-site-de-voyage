@@ -9,7 +9,7 @@
 
 .formulaire{
     background-color: #afa7a7;
-    padding: 40px ;
+    padding: 20px ;
     font-family:  'Acme', sans-serif;
     float: left;
     padding: 50px;
@@ -109,8 +109,6 @@
 #haut:hover {
     background-color: #ddd;
     }
-
-
 
 /*Formulaire*/
 * {

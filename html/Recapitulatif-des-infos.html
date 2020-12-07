@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
     
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/Accueil.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <title>En voyage organisé</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/Accueil.css">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <title>En voyage organisé</title>
+    </head>
 
-<body onload="recap()">
-    
-    <div class="header">
-        <div class="logo">
-            <img src="../image/logo.jpg" alt="logo" width="400">
+    <body onload="recap()">
+        
+        <div class="header">
+            <div class="logo">
+                <img src="../image/logo.jpg" alt="logo" width="400">
+            </div>
+            <p>Personne peut nous rivaliser</p>
         </div>
-        <p>Personne peut nous rivaliser</p>
-    </div>
 
-    <div class="nav-barre">
-        <a href="Accueil.html">Accueil</a>
-        <a href="Destination.html">Destination</a>
-        <a href="MonProfil.html">Mon profil</a>
-        <a href="MonPanier.html">Mon panier</a>
-        <a href="Pagecontact.html">A propos&Contact</a>
-    </div>
+        <div class="nav-barre">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Destination.html">Destination</a>
+            <a href="MonProfil.html">Mon profil</a>
+            <a href="MonPanier.html">Mon panier</a>
+            <a href="Pagecontact.html">A propos&Contact</a>
+        </div>
 
-    <link rel="stylesheet" href="../css/Recapitulatif-des-infos.css">
+        <link rel="stylesheet" href="../css/Recapitulatif-des-infos.css">
 
-   
-    <fieldset>
-        <legend>Récapitulatif des informations</legend>
-       
-        Nom : <br>
-        <input type="text" id="nomrecap"><br>
-        Prénom : <br>
-        <input type="text" id="prenomrecap"><br>
-        Adresse mail: <br>
-        <input type="email" id="mailrecap"><br>
-        Téléphone : <br>
-        <input type="tel" id="numtelrecap"><br>
-        Date de départ : <br>
-        <input type="date" id="datedeprecap"><br>
-        Date de retour : <br>
-        <input type="date" id="dateretrecap"><br>
-        Nombre d'adultes: <br>
-        <input type="number" id="nbadrecap"><br>
-        Nombre d'enfants (-12ans) : <br>
-        <input type="number" id="nbenfrecap"><br>
-        Petit déjeuner : <br>
-        <input type="radio" id="ptitdejrecap" value="Oui" checked> Oui
-        <input type="radio" id="ptitdejrecap" value="Non" checked> Non<br>
-        Animaux : <br>
-        <input type="radio" id="animaux" value="Oui" id="Oui" checked> Oui
-        <input type="radio" id="animaux" value="Non" id="Non" checked> Non<br>
-        Prix total : <br>
-        <input type="text" id"ptotrecap"><br>
-        Renseignements utiles: <br>
-        <textarea id="renseignrecap"></textarea><br>
-        <input type="submit" value="Valider">
-    </fieldset>
-
-    <p>Réservation n°"random"</p>
     
+        <fieldset>
+            <legend>Récapitulatif des informations</legend>
+        
+            Nom : <br>
+            <input type="text" id="nomrecap"><br>
+            Prénom : <br>
+            <input type="text" id="prenomrecap"><br>
+            Adresse mail: <br>
+            <input type="email" id="mailrecap"><br>
+            Téléphone : <br>
+            <input type="tel" id="numtelrecap"><br>
+            Date de départ : <br>
+            <input type="date" id="datedeprecap"><br>
+            Date de retour : <br>
+            <input type="date" id="dateretrecap"><br>
+            Nombre d'adultes: <br>
+            <input type="number" id="nbadrecap"><br>
+            Nombre d'enfants (-12ans) : <br>
+            <input type="number" id="nbenfrecap"><br>
+            Petit déjeuner : <br>
+            <input type="radio" id="ptitdejrecap" value="Oui" checked> Oui
+            <input type="radio" id="ptitdejrecap" value="Non" checked> Non<br>
+            Animaux : <br>
+            <input type="radio" id="animaux" value="Oui" id="Oui" checked> Oui
+            <input type="radio" id="animaux" value="Non" id="Non" checked> Non<br>
+            Prix total : <br>
+            <input type="text" id"ptotrecap"><br>
+            Renseignements utiles: <br>
+            <textarea id="renseignrecap"></textarea><br>
+            <input type="submit" value="Valider">
+            <p>Réservation n°"random"</p>
+        </fieldset>
 
-    <script src="../js/Recapinfos.js"></script>
-
-
-    <div style="height:5000px">
-        <button onclick="retourHaut()" id="haut" title="Retour haut de page">Haut</button>
-    </div>
-    
-</body>
+        <script src="../js/Recapinfos.js"></script>
+        
+    </body>
 
 </html>

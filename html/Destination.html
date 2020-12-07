@@ -7,11 +7,10 @@
         <link rel="stylesheet" href="../css/Accueil.css">
         <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/Destination.css">
-        <script src="../js/Temperature.js"></script>
         <title>En voyage organisé</title>
     </head>
 
-    <body onload="Temperature()">
+    <body>
         
         <div class="header">
             <div class="logo">
@@ -33,18 +32,17 @@
                 <div class="tableau-item"> <a href="Reservation.html?id={{id}}"><img src="../image/{{ville}}.jpg" alt="{{ville}}" width="420"></a>
                     <p>A partir de {{prix}} € par jour</p>
                     <p>Aller à {{ville}}</p>
-                    <p class="text" id="Paris"></p>
+                    <p class="text" id="{{ville}}"></p>
                 </div>
             </template>
         </div>
 
         <script src="../js/Destination.js" defer async></script>
         
-
-
         <div style="height:5000px">
             <button onclick="retourHaut()" id="haut" title="Retour haut de page">Haut</button>
         </div>
+        
     </body>
 
 </html>

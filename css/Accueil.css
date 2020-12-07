@@ -45,6 +45,7 @@
 }
 
 /* La barre de navigation reste en haut*/
+
 .sticky {
     position: fixed;
     top: 0;
@@ -135,6 +136,7 @@
     margin:0;
     padding:0;
 }
+
 body,html{height:100%}
 
 footer{
