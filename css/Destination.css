@@ -28,19 +28,6 @@
 }
 
 
-/* La barre de navigation reste en haut*/
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-  
-.sticky + .content {
-    padding-top: 60px;
-}
-
-
 /*Boutton retour haut de page*/
 
 #haut {

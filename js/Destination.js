@@ -38,7 +38,7 @@ for ( const v of tabDesttemp){
     newContent = clone.firstElementChild.innerHTML
     .replace(/{{ville}}/g, v._ville)
     .replace(/{{prix}}/g, v._prix)
-    .replace(/{{id}}/g, tabDest.indexOf(v))
+    .replace(/{{id}}/g, tabDesttemp.indexOf(v))
     .replace(/{{temperature}}/g, v._temperature);
 
 clone.firstElementChild.innerHTML = newContent
