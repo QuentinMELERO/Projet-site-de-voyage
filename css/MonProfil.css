@@ -1,3 +1,4 @@
+/* Style du formulaire d'authentification */
 h1{
     width: 38%;
     margin: 0 25%;
@@ -13,7 +14,7 @@ h1{
 }
 
 
-/* Style all input fields */
+/* Style des inputs */
 
 input {
     width: 100%;
@@ -48,7 +49,7 @@ input {
     transition:0.1 all
   }
   
-  /* Style the container for inputs */
+  /* Style des champs de remplissage pour les inputs */
 
   .container1 {
     background-color: #f1f1f1;
@@ -56,7 +57,7 @@ input {
     border-radius: 20px;
   }
   
-  /* The message box is shown when the user clicks on the password field */
+  /* Style du message qui s'affiche lorsque l'authentification est refusée */
 
   #message {
     display:none;

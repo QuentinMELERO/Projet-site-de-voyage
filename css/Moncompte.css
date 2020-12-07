@@ -1,0 +1,13 @@
+h1{
+    width: 38%;
+    margin: 0 25%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.container{
+  width:400px;
+  margin:0 auto;
+  margin-top:5%;
+  font-family:  'Acme', sans-serif;
+}
